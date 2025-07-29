@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preview Card </title>
+</head>
+
+<body id="center" style="background-color: #ffd560; padding: 0; margin: 0;">
+
+    <div id="container">
+        <div class="card">
+            <div class="card-inner">
+                <img src="sunflower.jpg" alt="yellowpic" style="width:260px;height:150px;border-radius:5%;">
+                <div class="text-box">
+                    <div class="Learning"> <strong>Learning</strong></div>
+                    <div class="category-label" id="meta"> Published 21 Dec 2023</div>
+                    <div class="category-label" id="title"> <strong>HTML & CSS foundations</strong> </div>
+                    <div class="category-label" id="description"> 
+                        These languages are the backbone of every <br>
+                        website, defining structure,content,and<br>
+                        presentation. </div>
+                    <div class="category-label" id="author"> <img src="yellow.jpg" alt="yellowpic" style="width:20px;height:20px;border-radius:50%;margin-right: 5px"> <strong>KittiKPN</strong> </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+<style>
+    * {
+        font-family: "Copperplate", sans-serif;
+    }
+
+    #container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        padding: 0;
+        margin: 0;
+    }
+
+    .card {
+        display: flex;
+        background-color: white;
+        border-radius: 5%;
+        box-shadow: 8px 5px black;
+        border-style: solid;
+        border-width: 3px;
+        border-color: black;
+        width: 300px;
+        height: 400px;
+    }
+
+    .card-inner {
+        margin: 20px;
+    }
+
+    .text-box {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        margin-top: 10px;
+        border-radius: 10%;
+        width: 260px;
+        height: 200px;
+    }
+
+    .category-label {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        margin-bottom: 4px;
+    }
+
+    .Learning {
+        display: flex;
+        border-radius: 7.5%;
+        background-color: rgb(243, 208, 9);
+        width: 60px;
+        height: 25px;
+        justify-content: center;
+        align-items: center;
+        font-size: 12px;
+        padding: 0;
+        margin-bottom: 4px;
+    }
+
+    #meta {
+        height: 25px;
+        font-size: 12px;
+    }
+
+    #title {
+        height: 40px;
+        font-size: 18px;
+    }
+
+    #description {
+        height: 70px;
+        color: rgb(130, 133, 134);
+        font-size: 12px;
+        line-height: 1.8;
+    }
+
+    #author {
+        margin-top: 20px;
+        font-size: 14px;
+    }
+</style>
